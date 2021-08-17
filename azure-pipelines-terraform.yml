@@ -56,7 +56,7 @@ stages:
   - job: TerraformAKS 
     displayName: Terraform init and apply AKS
     # Avoid concurrent Terraform runs on PRs, which would result in failures due to exclusive lock on remote state file.
-    condition: and(succeeded(), or(eq(variables['Build.SourceBranch'], 'refs/heads/master'), variables['RUN_FLAG_TERRAFORM']))
+    # condition: and(succeeded(), or(eq(variables['Build.SourceBranch'], 'refs/heads/master'), variables['RUN_FLAG_TERRAFORM']))
     steps:
     - task: AzureCLI@1
       displayName: Set Terraform backend
