@@ -26,15 +26,15 @@ parameters:
 
   - name: TerraformBackendResourceGroup
     type: string
-    default: terraformstate
+    default: 1fb-terraform
 
   - name: TerraformBackendStorageAccount
     type: string
-    default: terraformstatemsalem
+    default: testterraformstate12698
 
   - name: TerraformBackendStorageContainer
     type: string
-    default: terraformstateaks
+    default: tstate
   
   - name: TerraformBackendLocation
     type: string
