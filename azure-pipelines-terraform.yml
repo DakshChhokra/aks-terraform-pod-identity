@@ -40,8 +40,8 @@ parameters:
     type: string
     default: eastus
 
-variables:
-- group: terraform
+# variables:
+# - group: terraform
 
 
 
